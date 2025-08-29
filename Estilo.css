@@ -1,0 +1,106 @@
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #b1b0f3;
+    color: #333;
+}
+.contenido {
+    flex: 1;
+}
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #15141a;
+}
+
+h2,
+h5 {
+    color: #490feb;
+}
+
+p {
+    color: rgb(15, 14, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Estilos del menú */
+#menu-principal {
+    width: 100%;
+    background-color: #3aa7f0;
+    padding: 10px 0;
+}
+
+#menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#menu-principal li {
+    list-style: none;
+}
+
+#menu-principal a.menu-link {
+    text-decoration: none;
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#menu-principal a.menu-link:hover {
+    background-color: #777;
+}
+
+/* Menú responsivo */
+@media screen and (max-width: 768px) {
+    #menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu-principal a.menu-link {
+        width: 90vw;
+        font-size: 18px;
+        padding: 14px;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ccff;
+}
