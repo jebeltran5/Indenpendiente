@@ -1,17 +1,21 @@
- html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: #b1b0f3;
-    color: #333;
+    background: #1b263b; /* Azul oscuro */
+    color: #E0E1DD; /* Texto claro para contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .contenido {
     flex: 1;
 }
+
+/* Encabezado */
 header {
-    background-color: #003366;
+    background-color: #003366; /* Se mantiene */
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,24 +23,23 @@ header {
 
 h1 {
     text-align: center;
-    color: #15141a;
+    color: #E0E1DD;
 }
 
 h2,
 h5 {
-    color: #490feb;
+    color: #70E000; /* Verde vibrante */
 }
 
 p {
-    color: rgb(15, 14, 14);
-    font-family: Arial, Helvetica, sans-serif;
+    color: #E0E1DD;
     font-size: 15px;
 }
 
-/* Estilos del menú */
+/* Menú principal */
 #menu-principal {
     width: 100%;
-    background-color: #3aa7f0;
+    background-color: #003366;
     padding: 10px 0;
 }
 
@@ -56,17 +59,18 @@ p {
 
 #menu-principal a.menu-link {
     text-decoration: none;
-    background-color: #555;
-    color: white;
+    background-color: #38B000;
+    color: #1b263b;
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 5px;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu-principal a.menu-link:hover {
-    background-color: #777;
+    background-color: #70E000;
+    color: #1b263b;
 }
 
 /* Menú responsivo */
@@ -85,13 +89,13 @@ p {
     }
 }
 
+/* Pie de página */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 20px 10px;
     font-size: 14px;
-    font-family: Arial, sans-serif;
 }
 
 footer a {
@@ -102,4 +106,20 @@ footer a {
 
 footer a:hover {
     color: #00ccff;
+}
+
+.espacio {
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+.imagenweb {
+  width: 200px; /* o el tamaño deseado */
+  height: auto; /* mantiene la proporción */
+  border-radius: 50%; /* circular como una foto tipo perfil */
+  object-fit: cover; /* recorta si no es cuadrada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra opcional */
+  margin-bottom: 30px; /* espacio con el texto */
+
 }
