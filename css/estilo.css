@@ -115,11 +115,10 @@ footer a:hover {
   margin-bottom: 30px;
 }
 .imagenweb {
-  width: 200px; /* o el tamaño deseado */
-  height: auto; /* mantiene la proporción */
-  border-radius: 50%; /* circular como una foto tipo perfil */
-  object-fit: cover; /* recorta si no es cuadrada */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra opcional */
-  margin-bottom: 30px; /* espacio con el texto */
-
+  width: 200px; 
+  height: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 30px; 
 }
