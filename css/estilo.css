@@ -4,8 +4,8 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: #1b263b; /* Azul oscuro */
-    color: #E0E1DD; /* Texto claro para contraste */
+    background: #1b67f3; 
+    color: #a5c449; /* Texto claro para contraste */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,8 +39,8 @@ p {
 /* Menú principal */
 #menu-principal {
     width: 100%;
-    background-color: #003366;
-    padding: 10px 0;
+    background-color: #1E0B8C;
+    padding: 30px 0;
 }
 
 #menu-principal ul {
@@ -56,24 +56,78 @@ p {
 #menu-principal li {
     list-style: none;
 }
-
-#menu-principal a.menu-link {
-    text-decoration: none;
-    background-color: #38B000;
-    color: #1b263b;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.button-86 {
+  all: unset;
+  width: auto;
+  min-width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #aa2d2d;
+  cursor: pointer;
+  z-index: 1;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
 }
 
-#menu-principal a.menu-link:hover {
-    background-color: #70E000;
-    color: #1b263b;
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.4s;
 }
 
-/* Menú responsivo */
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #38B000;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  background-color: #70E000;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
 @media screen and (max-width: 768px) {
     #menu-principal ul {
         flex-direction: column;
@@ -81,7 +135,7 @@ p {
         gap: 10px;
     }
 
-    #menu-principal a.menu-link {
+    .button-86 {
         width: 90vw;
         font-size: 18px;
         padding: 14px;
@@ -91,7 +145,7 @@ p {
 
 /* Pie de página */
 footer {
-    background-color: #003366;
+    background-color: #1E0B8C;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -122,3 +176,46 @@ footer a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   margin-bottom: 30px; 
 }
+#color-derecha{
+    background: #1b67f3;
+}
+
+#color-letta{
+    color: white;
+}
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E0B8C;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.titulo-logo {
+  font-size: 28px;
+  color: #f8f7fc;
+  margin: 0;
+}
+
+.logo-derecha {
+  max-width: 1000px;
+  height: auto;
+  object-fit: contain;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-derecha {
+    max-width: 120px;
+    margin-top: 10px;
+  }
+}
+
