@@ -1,13 +1,11 @@
-html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  background: #1b67f3;
+  background: #d0def8;
   color: #a5c449;
-  /* Texto claro para contraste */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -17,33 +15,94 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #003366;
-  /* Se mantiene */
-  color: white;
+  background-color: #bbd8f5;
+  color: rgb(27, 24, 24);
   padding: 20px;
   text-align: center;
+}
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  background-color: #b3a7f7;
+  padding: 20px 40px
+}
+
+.logo-izquierda {
+  background-color: white;
+  order: 1;
+  max-width: 80px;
+  height: auto;
+  object-fit: contain;
+  padding: 3px;
+  border-radius: 0px;
+  margin-right: 10px;
+}
+.div1{
+  padding: 10px 0 20px 0;
+}
+.imagenweb {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.div2{
+  padding: 8px 0 0 0;
+}
+
+.div3{
+  padding: 60px 0 10px 0;
+}
+
+.div4{
+  padding: 50px 0 10px 0;
+}
+
+.imagenweb1 {
+  width: 200px;
+  height: auto;
+  border-radius: 50px;
+}
+.titulo-logo {
+  order: 2;
+  font-size: 18px;  
+  color: black;
+  margin-left: 0;
+  top: 100px;
+  left: -90px;
+  position: relative;
+  text-align: left;
+  padding: 0px;
 }
 
 h1 {
   text-align: center;
-  color: #E0E1DD;
+  color: black;
+  font-size: 25px;
 }
-
-h2,
-h5 {
-  color: #70E000;
-  /* Verde vibrante */
+h5,h2 {
+  color: black;
 }
 
 p {
-  color: #E0E1DD;
-  font-size: 15px;
+  color: black;
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-/* Menú principal */
+.espacio {
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
 #menu-principal {
   width: 100%;
-  background-color: #1E0B8C;
+  background-color: #b6abf7;
   padding: 30px 0;
 }
 
@@ -59,6 +118,18 @@ p {
 
 #menu-principal li {
   list-style: none;
+}
+
+#menu-principal a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#color-letta {
+  color: white;
 }
 
 .button-86 {
@@ -150,7 +221,7 @@ p {
 
 /* Pie de página */
 footer {
-  background-color: #1E0B8C;
+  background-color: #a698f3;
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -158,68 +229,19 @@ footer {
 }
 
 footer a {
-  color: #ffffff;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.color1 {
+  color: black;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
   color: #00ccff;
-}
-
-.espacio {
-  margin-top: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.imagenweb {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-#color-derecha {
-  background: #1b67f3;
-}
-
-#color-letta {
-  color: white;
-}
-
-.encabezado {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; /* Alineamos a la izquierda */
-  align-items: flex-start;
-  background-color: #1E0B8C;
-  padding: 20px 40px
-}
-
-#titulo-logo {
-  order: 2;
-  font-size: 28px;  
-  color: #f8f7fc;
-  margin-left: 0;
-  top: 100px;
-  left: 0;
-  position: relative;
-  text-align: left;
-  padding: 0px;
-}
-
-.logo-izquierda {
-  order: 1;
-  max-width: 100px;
-  height: auto;
-  object-fit: contain;
-  padding: 3px;
-  border-radius: 0px;
-  margin-right: 10px; /* Espacio entre logo y título */
 }
 
 @media screen and (max-width: 768px) {
@@ -233,4 +255,17 @@ footer a:hover {
     max-width: 120px;
     margin-top: 10px;
   }
+}
+#btn-descargar {
+  background-color: #70E000;
+  color: #1b67f3;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#btn-descargar:hover {
+  background-color: #38B000;
 }
